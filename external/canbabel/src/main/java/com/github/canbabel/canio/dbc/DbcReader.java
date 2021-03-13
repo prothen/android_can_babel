@@ -66,6 +66,12 @@ public class DbcReader {
         this.bus = null;
     }
 
+    public List<Message> getMessagesOnBus(int bus){
+        List<Bus> lb = network.getBus();
+        Bus b = lb.get(bus);
+        return b.getMessage();
+    }
+
     public NetworkDefinition getNetwork() throws RuntimeException {
         if (network == null) {
             throw new RuntimeException("no network read");

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <NetworkDefinition xmlns="http://kayak.2codeornot2code.org/1.0">
-    <Document name="read_in_test.dbc" date="Sat Mar 13 13:28:52 CET 2021">Converted with CANBabel (https://github.com/julietkilo/CANBabel)</Document>
+    <Document name="read_in_test.dbc" date="Sat Mar 13 17:11:44 CET 2021">Converted with CANBabel (https://github.com/julietkilo/CANBabel)</Document>
     <Node id="Bob" name="Bob"/>
     <Node id="Alice" name="Alice"/>
     <Bus name="Private">
