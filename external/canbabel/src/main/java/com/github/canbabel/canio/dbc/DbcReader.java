@@ -53,11 +53,11 @@ public class DbcReader {
     private NetworkDefinition network = null;
     private Document document = null;
 
-    public Bus bus;
-    public Map<Long, Set<Signal>> muxed = new TreeMap<Long, Set<Signal>>();
-    public final Set<LabelDescription> labels = new HashSet<LabelDescription>();
-    public final Set<SignalComment> signalComments = new HashSet<SignalComment>();
-    public final Set<MessageComment> messageComments = new HashSet<MessageComment>();
+    private Bus bus;
+    private Map<Long, Set<Signal>> muxed = new TreeMap<Long, Set<Signal>>();
+    private final Set<LabelDescription> labels = new HashSet<LabelDescription>();
+    private final Set<SignalComment> signalComments = new HashSet<SignalComment>();
+    private final Set<MessageComment> messageComments = new HashSet<MessageComment>();
     private String version = "";
     private PrintWriter logWriter;
     private boolean omitUnconsumedSignals = false;

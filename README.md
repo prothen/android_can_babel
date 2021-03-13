@@ -1,6 +1,6 @@
 # Android CAN Babel
 
-This repository extends the `CANBabel` with some minor adaptions for easier use with Android.
+This repository extends the `CANBabel` with some minor adaptions for easier use with Android, providing CAN `*.dbc` and `*.kcd` database usage for interpreting CAN protocol messages.
 
 
 ## Setup
