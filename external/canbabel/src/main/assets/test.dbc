@@ -1,0 +1,66 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: RCVE
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ brakepressure_bars : 40|8@1- (1,0) [0|0] ""  RCVE
+ SG_ stateofcharge_prec : 32|8@1- (1,0) [0|0] ""  RCVE
+ SG_ batterycurrent_amps : 24|8@1- (1,0) [0|0] ""  RCVE
+ SG_ brake_prec : 16|8@1- (1,0) [0|0] ""  RCVE
+ SG_ acceleration_prec : 8|8@1- (1,0) [0|0] ""  RCVE
+
+BO_ 1001 odometer: 8 Vector__XXX
+ SG_ speed_m_s : 0|32@1- (1,0) [-100|100] ""  RCVE
+
+BO_ 1002 perc_thr_brk: 8 Vector__XXX
+ SG_ thr : 0|32@1- (1,0) [0|0] "" Vector__XXX
+ SG_ brk : 32|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1003 Bat_voltage: 8 Vector__XXX
+ SG_ pack_volts : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1004 Bat_current: 8 Vector__XXX
+ SG_ pack_current : 0|32@1- (1,0) [0|0] "" Vector__XXX
+
+
+
+SIG_VALTYPE_ 1001 speed_m_s : 1;
+SIG_VALTYPE_ 1002 thr : 1;
+SIG_VALTYPE_ 1002 brk : 1;
+SIG_VALTYPE_ 1003 pack_volts : 1;
+SIG_VALTYPE_ 1004 pack_current : 1;
+
