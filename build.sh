@@ -8,7 +8,7 @@ APP_DIR=/home/flip/workspaces/sml/rcve_ui
 
 cwd="$(readlink -m "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd )")"
 
-if ! [ -z "$(command -v)" ]; then
+if [ -z "$(command -v mvn)" ]; then
     sudo apt install -y mvn
 fi
 
